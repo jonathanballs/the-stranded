@@ -5,7 +5,7 @@ ADD package.json .
 RUN yarn install
 ADD . /worker/
 
-EXPOSE 4004
-
+ENV PORT=80
+EXPOSE 80
 CMD ["yarn", "start"]
 
